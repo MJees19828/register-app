@@ -10,7 +10,15 @@ function AuthContext() {
   const [error,setError] =useState("null");
   const [loading,setLoading] =useState("false");
   const [user,setUser] =useState("null");
+
   
+  //signuo function
+  const authRegister=async(username,email,password)=>{
+    await fetch(url,{
+      method:"POST"
+
+    })
+  }
   return (
     <div>
 
@@ -18,4 +26,4 @@ function AuthContext() {
   )
 }
 
-export default AuthContext
+export default AuthContextProvider
